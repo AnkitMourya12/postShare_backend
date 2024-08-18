@@ -11,7 +11,7 @@ const bodyparser  = require("body-parser")
 //const mongoUri = process.env.MONGODB_URL_LOCAL
 
 const app = express();
-const PORT =  8080;
+const PORT = 3000 || 8080;
 app.use(cors({
   origin: ['http://localhost:3000']
 }));
