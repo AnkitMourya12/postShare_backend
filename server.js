@@ -11,7 +11,7 @@ const bodyparser  = require("body-parser")
 //const mongoUri = process.env.MONGODB_URL_LOCAL
 
 const app = express();
-const PORT = 3000 || 8080;
+const PORT =  8080;
 app.use(cors({
   origin: ['http://localhost:3000']
 }));
@@ -34,7 +34,7 @@ mongoose.connect("mongodb+srv://ankit12:Tikna12@social1.dmto26b.mongodb.net/mydb
     console.log("Connected to MongoDB Atlas");
 
     app.listen(PORT, () => {
-      console.log(`Server is running on http://localhost:${PORT}`);
+      console.log(`Server is running on http://localhost:3000`);
     });
   })
   .catch((err) => {
